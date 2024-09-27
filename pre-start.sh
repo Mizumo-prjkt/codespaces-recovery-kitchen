@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if user is on root (and auto run to root if not)
-if [ ! "$(/usr/bin/id -u)" == '0']; then
+if [ ! "$(/usr/bin/id -u)" == '0' ]; then
     sudo ./pre-start.sh
     exit
 fi
