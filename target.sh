@@ -115,7 +115,7 @@ dt=$(dialog --backtitle "Your device tree" \
 device_path=$(dialog --backtitle "Device Path" \
             --title "Enter device path" \
             --inputbox "Enter device path"  0 0 \
-            "./device/<edit this-vendor>/edit this-model>" \
+            "./device/samsung/a12s" \
              2>&1 >/dev/tty)
             clear
             local erval=$?
@@ -167,7 +167,7 @@ fi
 
 # Grab Build-TWRP SRC
 cd $R_HOME
-curl https://raw.githubusercontent.com/SUFandom/Build-TWRP/refs/heads/main/scripts/convert.sh
+curl https://raw.githubusercontent.com/SUFandom/Build-TWRP/refs/heads/main/scripts/convert.sh > convert.sh
 chmod +x convert.sh
 conv=$(realpath convert.sh)
 
