@@ -13,7 +13,7 @@ apt install openjdk-8-jdk dialog aria2 libncurses5 git python-is-python3 python2
 
 
 # Download Repo from Google using curl
-curl https://storage.googleapis.com/git-repo-downloads/repo 
+curl https://storage.googleapis.com/git-repo-downloads/repo > repo
 chmod +x repo
 mv repo /usr/bin/repo
 
