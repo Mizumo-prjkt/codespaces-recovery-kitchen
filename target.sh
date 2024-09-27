@@ -64,7 +64,7 @@ pick=$(dialog  --backtitle "Repo Select Tool" \
                 --menu "Select what fork of TWRP you want from TWRP Manifest: \nhttps://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp" 0 0 0 \
                 "Twrp 11" "Use TWRP 11" \
                 "Twrp 12.1" "Use TWRP 12.1" \
-                "Twrp 14" "Unknown yet"\
+                "Twrp 14" "Use TWRP 14"\
                 2>&1 >/dev/tty)
                 local erval=$?
                 case $erval in
